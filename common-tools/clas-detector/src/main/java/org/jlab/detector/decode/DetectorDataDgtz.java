@@ -243,6 +243,7 @@ public class DetectorDataDgtz implements Comparable<DetectorDataDgtz> {
         
         public ADCData setIntegral(int integral){
             this.pulseIntegral = integral;
+            this.pulseADC = integral;
             return this;
         }
         
