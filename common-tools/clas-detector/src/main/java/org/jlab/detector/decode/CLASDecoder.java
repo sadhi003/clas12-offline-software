@@ -166,6 +166,7 @@ public class CLASDecoder {
             adcBANK.setInt("ADC", i, adcDGTZ.get(i).getADCData(0).getADC());
             adcBANK.setFloat("time", i, (float) adcDGTZ.get(i).getADCData(0).getTime());
             adcBANK.setShort("ped", i, (short) adcDGTZ.get(i).getADCData(0).getPedestal());            
+				if(name == "SVT::adc") adcBANK.setLong("timestamp", i, (long) 1234L); // 1234 = dummy placeholder value
         }
         return adcBANK;
     }
